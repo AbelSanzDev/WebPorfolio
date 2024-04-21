@@ -7,7 +7,7 @@ const Experience = () => {
         Experience
       </h1>
       <div className="mx-[5%]">
-        <div className=" md:grid md:grid-cols-2 gap-4">
+        <div className=" lg:grid lg:grid-cols-2 gap-4">
           <div className="">
             <div className=" mt-[5rem]">
               <div className="">
@@ -117,14 +117,14 @@ const Experience = () => {
               https://grstechs.com/
             </a>
             <embed
-              className="mb-2 md:h-[100%] h-[20rem]"
+              className="mb-2 lg:h-[100%] h-[20rem]"
               src={"https://grstechs.com/"}
               width="100%"
               height="100%"
             />
           </div>
         </div>
-        <div className="md:grid md:grid-cols-2 gap-4 mt-[7rem]">
+        <div className="lg:grid lg:grid-cols-2 gap-4 mt-[7rem]">
           <div>
             <h1 className="text-4xl md:text-7xl font-thin">
               Pueblo Bonito Emerald Bay Resort & Spa

@@ -32,31 +32,32 @@ const Header = () => {
       <header className="   container mx-auto grid place-items-center mt-5">
         <nav
           className={`transition-all fixed  ${
-            screenSize < 400 ? " bottom-1 mb-2 shadow-sm shadow-white" : ""
+            screenSize < 400 ? " bottom-1 mb-2 shadow shadow-gray-500" : ""
           } flex gap-4  p-2 rounded-lg items-center mt-5 z-40 ${
             scrollPosition > 0 ? " bg-[#53515155]" : ""
           } transition-all`}
         >
           <a
-            href=""
-            className=" hover:bg-indigo-500  text-[.8rem] md:text-xl hover:rounded-lg transition-all p-1"
+            href="#about-me"
+            className=" hover:bg-indigo-500 text-[.8rem] md:text-xl hover:rounded-lg transition-all p-1 "
           >
-            Experience
+            About Me
           </a>
+
           <a
-            href=""
+            href="#projects"
             className=" hover:bg-indigo-500 text-[.8rem] md:text-xl hover:rounded-lg transition-all p-1"
           >
             Projects
           </a>
           <a
-            href=""
-            className=" hover:bg-indigo-500 text-[.8rem] md:text-xl hover:rounded-lg transition-all p-1"
+            href="#experience"
+            className=" hover:bg-indigo-500  text-[.8rem] md:text-xl hover:rounded-lg transition-all p-1"
           >
-            About Me
+            Experience
           </a>
           <a
-            href=""
+            href="#contact"
             className=" hover:bg-indigo-500 text-[.8rem] md:text-xl hover:rounded-lg transition-all p-1"
           >
             Contact

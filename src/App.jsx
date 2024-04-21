@@ -9,6 +9,7 @@ import DownloadCV from "./components/DownloadCV";
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
+
   // useEffect(() => {
   //   const handleScroll = () => {
   //     const currentPosition = window.scrollY;
@@ -75,17 +76,17 @@ function App() {
       <div>
         <IntroText elementRef3={elementRef3} ref3={ref3} />
       </div>
-      <div>
+      <div id="projects">
         <PersonalProjects />
       </div>
       <div>
         <ModalProjects />
       </div>
-      <div>
+      <div id="experience">
         {" "}
         <Experience />
       </div>
-      <div>
+      <div id="contact">
         <DownloadCV />
       </div>
     </div>

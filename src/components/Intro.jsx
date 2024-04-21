@@ -8,7 +8,7 @@ const Intro = ({ elementRef, elementRef2, ref1, ref2 }) => {
   const handleActiveModalPhoto = () => {
     onOpen();
   };
-  console.log(ref1);
+
   return (
     <div>
       <div className=" -z-10 relative">

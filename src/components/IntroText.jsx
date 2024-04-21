@@ -4,6 +4,7 @@ const IntroText = ({ elementRef3, ref3 }) => {
   return (
     <>
       <div
+        id="about-me"
         className={` transition-all duration-1000 ${
           ref3 < 600 ? "opacity-100" : "opacity-0"
         } `}
