@@ -1,7 +1,7 @@
 import React from "react";
 import CV from "../../public/data/CV.pdf";
 import { Chip, Link } from "@nextui-org/react";
-const DownloadCV = () => {
+const DownloadCV = ({ elementRef7, ref7 }) => {
   return (
     <>
       <div
@@ -12,7 +12,9 @@ const DownloadCV = () => {
         <div className=" relative">
           <div className=" -z-20">
             <img
-              className={` transition-all duration-1000  h-[50rem] w-full object-cover mask opacity-75  `}
+              className={` transition-all duration-1000  h-[50rem] w-full object-cover mask ${
+                ref7 < 792 ? "opacity-50" : "opacity-0"
+              }  `}
               src="https://res.cloudinary.com/dcqvg21nk/image/upload/v1713594373/Portfolio/kh7azy142fknzrmstqed.jpg"
               alt=""
             />
@@ -24,13 +26,22 @@ const DownloadCV = () => {
          md:mx-[5%] mt-44 absolute -top-[10rem] md:top-1  `}
           >
             <footer className=" mt-[10rem]   2xl:grid 2xl:grid-cols-2">
-              <div>
+              <div
+                ref={elementRef7}
+                className={` md:mb-0 mb-4 ${
+                  ref7 < 792 ? "animacionDerecha opacity-100" : "opacity-0"
+                }`}
+              >
                 <h1 className=" text-7xl md:text-[10rem] font-thin md:leading-10 md:mb-3">
                   LET'S
                 </h1>
-                <h1 className="text-7xl md:text-[10rem] font-thin">CONNECT</h1>
+                <h1 className="text-6xl md:text-[10rem] font-thin">CONNECT</h1>
               </div>
-              <div>
+              <div
+                className={`${
+                  ref7 < 792 ? "animacion opacity-100" : "opacity-0"
+                }`}
+              >
                 <div className="flex flex-wrap gap-3">
                   <Chip
                     variant="flat"
@@ -86,7 +97,7 @@ const DownloadCV = () => {
                   <div>
                     <Link
                       color="warning"
-                      className="text-2xl md:text-3xl font-bold"
+                      className="text-2xl md:text-3xl font-bold underline"
                       href={CV}
                       download
                     >
@@ -96,7 +107,7 @@ const DownloadCV = () => {
                   <div>
                     <Link
                       color="warning"
-                      className="text-2xl md:text-3xl font-bold"
+                      className="text-2xl md:text-3xl font-bold underline"
                       href="mailto:abelsandev@gmail.com"
                     >
                       abelsandev@gmail.com
@@ -105,7 +116,7 @@ const DownloadCV = () => {
                   <div>
                     <Link
                       color="warning"
-                      className="text-2xl md:text-3xl font-bold"
+                      className="text-2xl md:text-3xl font-bold underline"
                       href="tel:+526691614328"
                     >
                       +52 669 161 43 28
