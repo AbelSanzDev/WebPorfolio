@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mi-grid {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+
+/**Animaciones para elementos to left rigth*/
+@keyframes moverIzquierdaDerecha {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes moverDerechaIzquierda {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes salirDerecha {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animacion {
+  animation: moverIzquierdaDerecha 1s ease alternate;
+}
+
+.animacionDerecha {
+  animation: moverDerechaIzquierda 1s ease alternate;
+}
+
+.animacionSalirDerecha {
+  animation: salirDerecha 2s ease alternate;
+}
+
+.clip {
+  clip-path: polygon(0 1%, 0 22%, 30% 50%, 30% 50%, 50% 70%, 50% 70%, 100% 100%, 100% 80%, 70% 50%, 70% 50%, 50% 30%, 50% 30%);
+}
+
+.clip1 {
+
+  clip-path: polygon(0 1%, 0 22%, 0 48%, 0 55%, 0 80%, 0 100%, 100% 100%, 100% 80%, 100% 40%, 100% 0, 89% 0, 61% 0);
+
+}
+
+.mask {
+
+  -webkit-mask-image: -webkit-linear-gradient(transparent, black 80%, transparent);
+}
+
+.mask2 {
+
+  -webkit-mask-image: -webkit-linear-gradient(transparent, black 50%, transparent);
+}
+
+.size {
+  width: 3rem;
+}
+
+.grid-propio-moaibi {
+  display: flex;
+  flex-direction: column;
+}
+
+@media(min-width:1500px) {
+  .grid-propio-moaibi {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 1rem;
+  }
+}
+
+.grid-propio-resmoaibi {
+  display: flex;
+  flex-direction: column;
+}
+
+@media(min-width:1500px) {
+  .grid-propio-resmoaibi {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 1rem;
+  }
+}
+
+.mtop {
+  margin-top: 50rem;
+}
+
+@media(min-width:1500px) {
+  .mtop {
+    margin-top: 0;
+  }
+}
+
+.first {
+  order: 2;
+}
+
+.second {
+  order: 1;
+}
+
+@media(min-width:1500px) {
+  .first {
+    order: 1;
+  }
+
+  .second {
+    order: 2;
+  }
+}
+
+@media(min-width:1500px) {
+  .relatived {
+    position: relative;
+  }
+
+  .absoluted {
+    position: absolute;
+  }
+}
